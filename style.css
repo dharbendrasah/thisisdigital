@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'copperltbt';
+    src: url("CooperLtBTWXXLight.ttf");
+}
+
+@font-face {
+    font-family: 'pro-fa-brands';
+    src: url("pro-fa-brands-400-5.0.0.ttf");
+}
+
+@font-face {
+    font-family: 'sequalsansdisplay';
+    src: url("SequelSansDisplay.ttf");
+}
+
+@font-face {
+    font-family: 'sequalsansdisplaybook';
+    src: url("SequelSansDisplayBook.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'copperltbt';
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+}
+
+.nav-part1 svg {
+    width: 144px;
+    height: 25px
+}
+
+.nav-part2 {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav-part2 a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-family: 'sequalsansdisplay';
+}
+
+.nav-contact-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid black;
+    padding: 0.6rem 1.5rem;
+    border-radius: 10rem;
+    word-spacing: 0.5rem;
+    overflow: hidden;
+}
+
+.nav-contact-btn::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    left: -100%;
+    z-index: -1;
+    transition: left 0.5s ease;
+}
+
+.nav-contact-btn:hover::after {
+    left: 0;
+}
+
+.center-text {
+    /* background-color: salmon; */
+    width: 100%;
+    height: calc(100vh - 108px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.center-text p {
+    font-size: 3.75rem;
+    width: 40%;
+    text-align: center;
+    position: relative;
+}
+
+.center-text p::after {
+    content: "";
+    display: block;
+    width: 45%;
+    height: 16px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("https://thisisdigital.co.uk/dist/images/underline-green.svg");
+}
+
+.center-text a {
+    font-size: 1.43rem;
+    font-family: "sequalsansdisplaybook";
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.center-text a i {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 0.2rem 1.5rem;
+    border-radius: 10rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.center-text a i::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: -1;
+    transition: left 0.5s ease;
+}
+
+.center-text a i:hover::after {
+    left: 0;
+}
+
+.img1 {
+    width: 300px;
+    position: absolute;
+    left: 5%;
+    top: 25%;
+}
+
+.img2 {
+    width: 270px;
+    position: absolute;
+    left: 56%;
+    top: 16%;
+}
+
+.img3 {
+    width: 250px;
+    position: absolute;
+    left: 73%;
+    top: 60%;
+}
